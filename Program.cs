@@ -12,7 +12,8 @@ namespace Сумма_чисел
             Random Rnd = new Random();
 
             int numberRandom = Rnd.Next(startNumberRandom, stopNumberRandom);
-            int multipleNumber1 = 3, multipleNumber2 = 5;
+            int multipleNumber1 = 3; 
+            int multipleNumber2 = 5;
             int summandNumber=0;
 
             for(int i=0;i<=numberRandom;i++)
@@ -22,7 +23,7 @@ namespace Сумма_чисел
                     summandNumber = summandNumber + i;
                 }
             }
-            Console.WriteLine("Сумма чисел кратных 3 и 5 = " + summandNumber);
+            Console.WriteLine("Сумма чисел кратных "+ multipleNumber1 +" и "+ multipleNumber2+" = " + summandNumber);
         }
     }
 }
